@@ -1,0 +1,71 @@
+* {
+	padding:0;
+	margin:0;
+}
+body {
+	background-color: #fff;
+}	
+ul {
+	list-style:none;
+}
+li {
+	float:left;
+	overflow:hidden;
+}
+.large {
+	position:fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background-color:#fff;
+	opacity:0;
+	transition:all .5s ease;
+}
+/*关闭按钮*/
+.close_btn{
+	position:absolute;
+	left:50%;
+	bottom:5%;
+	margin-left:-13px;
+	width: 26px;
+	height: 26px;
+	z-index:1111;
+}
+.line {
+	display:block;
+	position:absolute;
+	height:2px;
+	width: 80%;
+	background-color:rgba(0, 0, 0, 0.5);
+}
+.line1{
+	left:13px;
+	transform:rotateZ(45deg);
+	transform-origin:left;
+}
+.line2{
+	left:13px;
+	transform:rotateZ(135deg);
+	transform-origin:left;
+}
+/*头部*/
+.header {
+	position:fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 40px;
+	margin-bottom:4px;
+	background-color:#fff;
+	box-shadow:0px 1px 4px rgba(0, 0, 0, 0.5);
+	font-size:14px;
+	text-align:center;
+	z-index:111;
+}
+.fake_header{
+	width: 100%;
+	height:40px;
+
+}
+/*page1样式*/
