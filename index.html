@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>相册</title>
@@ -11,32 +12,36 @@
 	<script>
 		document.onreadystatechange = function () {
 			if (document.readyState == "complete") {
-					$(".loading").css("display", "none");
-				}
+				$(".loading").css("display", "none");
+				$("#_header").addClass("animated fadeInDown");
+				$(".canvas-img").addClass("animated bounceIn");
 			}
+		}
 	</script>
 </head>
+
 <body>
 	<div class="loading">
 		<div class="loading-icon"></div>
 	</div>
-		<div class="header animated animated-delay fadeInDown" id="_header">
-			<h2>GALLERY</h2>
-		</div>
-		<div class="fake_header" id="fake_header"></div>
-		<div class="container">
-			<div class="page2">
-				<ul id="count">
-				</ul>
-				<div class="large" id="large_count">
-					<div class="close_btn" id="close">
-						<span class="line line1" id="_line1"></span>
-						<span class="line line2" id="_line2"></span>
-					</div>
-						<img class="animated animated-delay fadeInDown" id="large_img" />
+	<div class="header" id="_header">
+		<h2>GALLERY</h2>
+	</div>
+	<div class="fake_header" id="fake_header"></div>
+	<div class="container">
+		<div class="page2">
+			<ul id="count">
+			</ul>
+			<div class="large" id="large_count">
+				<div class="close_btn" id="close">
+					<span class="line line1" id="_line1"></span>
+					<span class="line line2" id="_line2"></span>
 				</div>
+				<img class="animated animated-delay fadeInDown" id="large_img" />
 			</div>
 		</div>
+	</div>
 	<script type="text/javascript" src="js/date.js"></script>
 </body>
+
 </html>

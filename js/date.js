@@ -29,7 +29,7 @@
 			if (i % 4 == 1) {
 				p = 0;
 			}
-			html += '<li data-id="' + i + '" class="animated bounceIn" style="width:' + picWidth + 'px;height:' + picWidth + 'px;padding-top:' + padding + 'px;padding-left:' + p + 'px;"><canvas id="cvs_' + i + '"></canvas></li>';
+			html += '<li data-id="' + i + '" class="canvas-img" style="width:' + picWidth + 'px;height:' + picWidth + 'px;padding-top:' + padding + 'px;padding-left:' + p + 'px;"><canvas id="cvs_' + i + '"></canvas></li>';
 
 			var imgObj = new Image();
 			imgObj.index = i;
