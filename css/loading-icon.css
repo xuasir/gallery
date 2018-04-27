@@ -1,0 +1,50 @@
+.loading {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1111;
+    background-color: #e1e1e1;
+}
+
+.loading .loading-icon {
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border: 4px solid lightgray;
+    border-right-color: #232323;
+    border-top-color: #232323;
+    border-radius: 100%;
+    -webkit-animation: rotation .66s infinite linear;
+    animation: rotation .66s infinite linear;
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+}
+
+@-webkit-keyframes rotation {
+    from {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}

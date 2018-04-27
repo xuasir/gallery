@@ -6,9 +6,20 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
 	<link rel="stylesheet" href="css/animate.css" />
 	<link rel="stylesheet" href="css/index.css" />
+	<link rel="stylesheet" href="css/loading-icon.css" />
 	<script type="text/javascript" src="js/zepto.min.js"></script>
+	<script>
+		document.onreadystatechange = function () {
+			if (document.readyState == "complete") {
+					$(".loading").css("display", "none");
+				}
+			}
+	</script>
 </head>
 <body>
+	<div class="loading">
+		<div class="loading-icon"></div>
+	</div>
 		<div class="header animated fadeInDown" id="_header">
 			<h2>GALLERY</h2>
 		</div>
